@@ -1,0 +1,75 @@
+/* #本文件独属"准备界面&角色背包"界面css样式文件，包含了容器区域的样式代码# */
+
+/* 1.准备界面容器区域整体样式（仅涵盖容器区域，底部按钮除外）
+   2.角色背包界面容器区域整体样式（仅涵盖容器区域，底部按钮除外） */
+.container {
+    margin-top: 70px; /* 与顶端间隔 */
+}
+
+/* 1.仓库与背包容器边框标题样式
+   2.角色背包容器边框标题样式 */
+.box-title {
+    margin-bottom: 10px; /* 标题外边距，与方框之间的间隔 */
+    font-size: 35px; /* 字体大小 */
+    color: white; /* 字体颜色 */
+    font-weight: bold; /* 字体加粗 */
+    margin: 13px 0px; /* 上下外边距与左右外边距 */
+}
+
+/* 1.仓库与背包容器外方框样式
+   2.角色背包容器外方框样式 */
+.box {
+    border: 3px solid #666666; /* 创建容器外边框，实线边框 */
+    border-radius: 10px; /* 边框圆角弧度 */
+    height: 560px; /* 边框高度 */
+    width: 320px; /* 边框宽度 */
+    margin: 20px 10px; /* 上下外边距与左右外边距的像素距离 */
+    position: relative; /* 允许对容器内的子元素进行位移，便于微调移动 */
+    display: inline-block; /* 允许容器内的子元素设置宽度、高度、内边距和外边距 */
+    text-align: center; /* 内容在其容器内居中显示 */
+}
+
+/* 1.仓库与背包容器内方框样式
+   2.角色背包容器内方框样式 */
+.small-box {
+    border: 3px solid #868686; /* 创建容器内边框，实线边框 */
+    border-radius: 10px; /* 边框圆角弧度 */
+    margin: 0px 10px 10px 10px; /* 内边距，内边框与其他元素上下左右的间距 */
+    height: calc(94% - 55px); /* 确保内边框在外边框内 */
+}
+
+/* 1.仓库与背包父容器内边框内容器的样式，也就是.small-box边框内容器的样式
+   2.角色背包父容器内边框内容器的样式，也就是.small-box边框内容器的样式 */
+.content-container {
+    height: 100%; /* 内容区域高度 */
+    padding: 10px; /* 内边距 */
+    text-align: left; /* 文字居左 */
+    overflow-y: scroll; /* 允许滚动查看 */
+    scrollbar-width: none; /* 在Firefox浏览器中隐藏父容器滚动条 */
+}
+
+/* 这是基于上方.content-container的附加项 */
+.content-container::-webkit-scrollbar {
+    display: none; /* 在Chrome, Safari, Edge浏览器内隐藏父容器滚动条 */
+}
+
+/* 1.准备界面容器内物品显示的样式
+   2.角色背包容器内物品显示的样式 */
+.role-item {
+    margin-bottom: 10px; /* 物品垂直间隔设置 */
+    width: 100%; /* 每行一个物品，宽度为容器的100% */
+    display: flex; /* 设置弹性容器盒子，包含的子元素可以灵活的排列和调整 */
+    justify-content: space-between; /* 保持按钮与物品名的间隔 */
+    align-items: center; /* 垂直居中对齐 */
+
+    border: 3px solid #a6a4a4; /* 创建容器边框，实线边框 */
+    border-radius: 7px; /* 边框圆角弧度 */
+    padding: 10px; /* 内边距，边框内元素与边框间距 */
+    background-color: #333333; /* 边框内背景颜色 */
+    margin: 5px 0px; /* 边框上下外边距与左右外边距 */
+    font-size: 25px; /* 边框内字体大小 */
+    color: #d8d6d6; /* 边框内字体颜色 */
+    display: inline-block; /* 显示为行内块元素，使元素独占一行 */
+    width: 100%; /* 使元素宽度占满父容器 */
+    box-sizing: border-box; /* 使元素元素的宽度和高度包括内容区域、内边距和边框。简而言之，可以更直观地控制元素的尺寸 */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <!-- 中文的网页声明 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 适配所有显示器声明，手机上显示将自动适应屏幕 -->
+    <title>贪婪洞窟</title>
+    <link rel="stylesheet" href="common/global-style.css"> <!-- 引入公共的CSS样式表文件 -->
+    <link rel="stylesheet" href="index.css"> <!-- 引入CSS样式表文件 -->
+</head>
+<body>
+    <!-- 主菜单界面 -->
+    <div id="main-menu" class="visible"> <!-- 将主菜单界面函数命名为main-menu。调用visible函数使子元素可见并使每项子元素独占一行 -->
+        <h1>贪婪洞窟</h1>
+        <button class="button clickable" onclick="enterCave()">进入洞窟</button><br> <!-- 点击该按钮后调用js中的enterCave()函数 -->
+        <button class="button clickable">城镇广场</button><br> <!-- 使用全局按钮样式.button和.clickable -->
+        <button class="button clickable" onclick="enterWarehouse()">角色仓库</button> <!-- 点击该按钮后调用js中的enterWarehouse()函数 -->
+    </div>
+
+    <!-- 选择层数界面 -->
+    <div id="layer-selection" class="hidden"> <!-- 将主菜单界面函数命名为layer-selection。调用hidden函数隐藏选择层数界面 -->
+        <h1>选择层数</h1>
+        <button class="button clickable" onclick="selectLayer(1)">1-10层</button><br>
+        <!-- 点击该按钮后调用js中的selectLayer函数，并传递参数1（从第一层开始） -->
+        <button class="button unclickable">11-20层</button><br>
+        <!-- 不可点击按钮样式，该部分未完工 -->
+        <button class="button unclickable">21-30层</button>
+        <!-- 不可点击按钮样式，该部分未完工 -->
+    </div>
+
+    <script src="index.js"></script> <!-- 引入JS样式表文件 -->
+</body>
+</html>

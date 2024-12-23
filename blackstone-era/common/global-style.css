@@ -1,0 +1,40 @@
+/* #公共css样式文件# */
+
+/* 全局body样式 */
+body {
+    background-color: #1a1a1a; /* 全局背景 */
+    color: white; /* 字体颜色 */
+    font-family: Arial, sans-serif; /* 全局字体，全局备选字体 */
+    text-align: center; /* 全局文本排列居中对齐 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
+}
+
+/* 全局h1标题样式 */
+h1 {
+    font-size: 40px; /* 字体像素大小 */
+    margin-top: 50px; /* 标题离顶部的像素距离  */
+}
+
+/* 全局按钮样式模板：可点击按钮&不可点击按钮。需要与.clickable或.unclickable组合使用 */
+.button {
+    border: 3px solid #666666; /* 按钮边框像素宽度与颜色 */
+    border-radius: 10px; /* 按钮边框圆角半径 */
+    color: #FFFFFF; /* 按钮字体颜色 */
+    font-size: 20px; /* 按钮字体大小 */
+    font-weight: bold; /* 按钮字体加粗 */
+    padding: 10px 20px; /* 内边距，按钮文字与边框上下与左右的距离 */
+    margin: 10px; /* 外边距，按钮与按钮之外元素的距离 */
+    width: 150px; /* 按钮宽度（横向距离） */
+    cursor: pointer; /* 鼠标样式悬停样式：手形指向 */
+}
+
+/* 可点击按钮独有样式：透明按钮背景。与.button组合使用 */
+.clickable {
+    background-color: transparent;
+}
+
+/* 不可点击按钮独有样式：将按钮背景改为浅灰色。与.button组合使用 */
+.unclickable {
+    background-color: #333;
+}
